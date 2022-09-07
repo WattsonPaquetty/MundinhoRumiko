@@ -1,0 +1,160 @@
+@font-face {
+    font-family:'anime' ;
+    src: url(fonte/animefonte.otf)format('opentype');
+}
+* {margin: 0;
+}
+header {
+    width: 100%; height: 443px; background-color: #292F45;
+}
+.Container { display: flex; align-items: center; justify-content: center; 
+
+}
+.cabeçario {
+    width: 80%;height:400px ;  display: flex; 
+}
+header h1 {
+    font-size: 1.9em; text-align: center; background-color:#292F45 ; color: #EB1B1B; text-shadow: 2px 2px 2px yellow; padding:5px ; font-family:'anime' ;
+}
+main {
+    background-color:#292F45 ; width: 100%; height: auto; justify-content: center;  display: flex;
+}
+section {
+    width: 90%; height: 1000px; background-color: bisque; margin: 30px; display: grid;
+    gap: 20px; border: 3px solid black;  grid-template-columns: 30% 30% 30%;
+    grid-template-areas: 
+    'a1 d4 d4'
+    'b2 d4 d4'
+    'c3 d4 d4'
+    
+
+}
+.LINK {text-decoration: none ;color: #EB1B1B;
+
+}
+.a1 {
+     margin: 10px; justify-content: center; width: 300px; height: 300px; 
+     grid-area:a1;
+}
+.b2 {
+    margin: 10px;  justify-content: center; width: 300px; height: 300px;  grid-area: b2;
+}
+.c3 {
+    margin: 10px; justify-content: center; width: 300px; height: 300px;  grid-area: c3;
+}
+.d4 {
+    height: 90%; width: auto; 
+    grid-area: d4; margin: 36px; background-color: white; border: 4px dashed black; display: block;
+}
+.ImagemGrid {
+    padding-left: 25px; padding-top: 25px; width: auto;
+}
+h2 {
+    text-align: center; font-family: 'anime'; color: #2684C2; text-shadow: 2px 2px 2px yellow; font-size: 1.7em;
+}
+
+.Ranma {
+    color:#EB1B1B
+}
+.Inuyasha {
+    color: #689b41;
+}
+
+.Texto {
+    text-align: center; font-family: 'anime'; font-size: 1.8em; margin-top: 35px
+}
+.Artigo {text-align: justify; text-indent: 30px; margin: 30px; font: normal normal 1.2em Arial,Helvetica,sans-serif;
+}
+.imagemtexto {  margin: 0px auto; display: block; width: auto;
+
+}
+
+@media (max-width:1000px ){
+    section { grid-template-areas: 
+    'a1 a1 d4'
+    'b2 b2 d4'
+    'c3 c3 d4'
+    'd4 d4 d4';
+    width: 700px; justify-content: center; align-items: center;
+    }
+    .d4 {
+        width: 300px; margin-left: 100px;
+    }
+}
+@media (max-width:706px ){
+    section { display:block; justify-content: center; align-items: center; height: 1750px;
+        }
+        .a1,.b2,.c3{
+            width: 600px;
+        }
+        .ImagemGrid{
+            width: 300px; margin-left: 125px;
+        }
+        .d4{
+            height: 740px; margin-left: 110px; width: 400px;
+        }
+}
+@media (max-width:628px ){
+    section{
+        width:508px ; margin: 50px;
+    }
+    .a1,.b2,.c3{
+        width: 469px;
+    height: 285px;
+    }
+    .ImagemGrid{
+        width: 250px; margin-left:  85px;
+    }
+    .d4{
+        height: 805px;
+    width: 338px;
+    margin-left: 81px;
+    }
+    
+}
+
+@media (max-width:495px ){
+section {
+    width: 393px;
+    margin: 50px;
+}
+.a1, .b2, .c3 {
+    width: 371px;
+    height: 285px;
+}
+.ImagemGrid {
+    width: 238px;
+    margin-left: 48px;
+}
+.d4 {
+    height: 805px;
+    width: 338px;
+    margin-left: 25px;
+}
+}
+
+@media (max-width:400px ){
+
+    section {
+        width: 340px;
+        margin: 20px;
+        height: 1780px;
+    }
+    .a1, .b2, .c3 {
+        width: 319px;
+        height: 285px;
+    }
+    .ImagemGrid {
+        width: 230px;
+        margin-left: 17px;
+    }
+    .d4 {
+        height: 805px;
+        width: 280px;
+        margin-left: 25px;
+    }
+    .Artigo{
+        font-size: 1.1em;
+    }
+    }
+   
