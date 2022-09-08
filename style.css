@@ -69,6 +69,20 @@ h2 {
 
 }
 
+.navegador { display:flex;
+    background-color: #292F45;
+    font: normal normal 1.8em 'anime';
+    color:#EB1B1B ; text-shadow: 2px 2px 2px yellow; align-items:center  ; justify-content:space-evenly;
+    
+}
+
+.home {
+    text-decoration: none;color:#EB1B1B ; text-shadow: 2px 2px 2px yellow; margin-top: 30px;
+}
+
+
+
+
 @media (max-width:1000px ){
     section { grid-template-areas: 
     'a1 a1 d4'
@@ -93,8 +107,9 @@ h2 {
         .d4{
             height: 740px; margin-left: 110px; width: 400px;
         }
+        .home { font-size: 0.8em;}
 }
-@media (max-width:628px ){
+@media (max-width:645px ){
     section{
         width:508px ; margin: 50px;
     }
@@ -110,10 +125,13 @@ h2 {
     width: 338px;
     margin-left: 81px;
     }
+    .home {
+        margin-top: 45px;
+    }
     
 }
 
-@media (max-width:495px ){
+@media (max-width:540px ){
 section {
     width: 393px;
     margin: 50px;
@@ -131,9 +149,12 @@ section {
     width: 338px;
     margin-left: 25px;
 }
+.home {
+    font-size: 0.7em;
+}
 }
 
-@media (max-width:400px ){
+@media (max-width:450px ){
 
     section {
         width: 340px;
@@ -156,5 +177,12 @@ section {
     .Artigo{
         font-size: 1.1em;
     }
+    .navegador {display:block; padding-top:20px; padding-left: 20px;  font-size: 2.0em;
+     }
+     .home{ padding:0px ;}
+    
     }
+    
+
+ 
    
