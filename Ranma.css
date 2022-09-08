@@ -66,10 +66,82 @@ main {
     .navegador { display:flex;
         background-color: #292F45;
         font: normal normal 1.8em 'anime';
-        color:#EB1B1B ; text-shadow: 2px 2px 2px yellow; align-items:center  ; justify-content:space-evenly;
+        color:lightpink ; text-shadow: 2px 2px 2px yellow; align-items:center  ; justify-content:space-evenly;
         
     }
     
     .home {
         text-decoration: none;color:#EB1B1B ; text-shadow: 2px 2px 2px yellow; margin-top: 30px;
     }
+    @media (max-width:1479px) {
+        .RanmaEpisodios {
+            max-width:400px;
+        }
+        .episodios {
+            padding-left: 20px;
+        }
+        .RanmaFilme {
+           
+        }
+        .Filme {padding-right: 20px;}
+        .Mangas {
+            padding-left: 20px;
+        }
+        .RanmaMangas {max-width: 500px;}
+        .Artigo1 {
+            margin-right: 125px;
+    }
+}
+@media (max-width:1250px) {
+    .RanmaEpisodios {
+     max-width:350px 
+  
+}
+    .episodios {
+        padding-left: 50px;
+    }
+    .RanmaFilme {
+           max-width:350px ;
+    }
+    .Filme {
+        padding-right: 50px;
+    }
+   
+   .section { height: 875px;
+}
+.Artigo2 { margin-bottom: 25px;}
+}
+@media (max-width:1023px)
+{
+.RanmaMangas {
+    max-width: 420px
+
+}
+.RanmaFilme {
+    max-width:300px ;
+}
+.Mangas{padding-left: 50px;}
+}
+
+
+@media (max-width:850px)
+{
+.RanmaEpisodios {
+    max-width: 251px;
+}
+.episodios{
+    padding-left:150px
+}
+.Mangas {
+    padding-left: 150px;
+    margin-bottom: 136px
+}
+.RanmaFilme {
+    max-width:200px ;
+}
+.Filme{ margin-right: 100px;
+    
+}
+.section {height: 805px;}
+}
+@media (max-width:752px)
