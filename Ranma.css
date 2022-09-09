@@ -2,6 +2,11 @@
     font-family:'anime' ;
     src: url(fonte/animefonte.otf)format('opentype');
 }
+Body {
+    background: #292F45 url('imagem/imagem\ de\ fundo.jpg')center center no-repeat cover fixed;
+}
+
+
 * {margin: 0;
 }
 header {
